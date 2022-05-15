@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    /* user-select: none; */
+}
+body{
+    font-size: 16px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+::selection{
+    background-color: #ff046f;
+    color: white;
+}
+.d_block{
+    display: block !important;
+}
+.hero_section{
+    background-color: #d162fb;
+    padding: 1em 2%;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.hero_section .nav_bar{
+    background-color: white;
+    padding: 0.6em 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2em;
+    position: fixed;
+    right: 1.2em;
+    left: 1.2em;
+    z-index: 1000;
+}
+.hero_section .nav_bar .logo{
+    color: #d162fb;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.nav_bar .menu_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_bar ul li{
+    display: inline-block;
+    margin-right: 1em;
+}
+.menu_bar ul li a{
+    color: #ff046f;
+    text-transform: capitalize;
+    transition: all linear 0.2s;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.menu_bar ul li a.active , .menu_bar ul li:hover a{
+    color: #d162fb;
+}
+.toggle_menu{
+    font-size: 1.5em;
+    color: #ff046f;
+    display: none;
+}
+.hero_section .bottom_wave{
+    content: '';
+    position: absolute;
+    bottom: -10em; left:50%;
+    transform: translateX(-50%);
+    background-color:  #fff;
+    height: 20em;
+    width:120%;
+    border-radius: 50%;
+}
+.hero_section .content{
+    
+    width: 100%;
+    min-height: 60vh;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 6em;
+}
+.content h1{
+    color: white;
+    font-size: 3.3rem;
+    text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 30%);
+    font-weight: 600;
+}
+.content p{
+    font-size: 1.2em;
+    color: white;
+    margin: 0.7em 0;
+    font-weight: 400;
+}
+.content .details > a{
+    background-color: #ff046f;
+    padding: 0.3em 1.6em;
+    border-radius: 2.2em;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+.content .details{
+    max-width: 65%;
+    margin: 0 auto;
+}
+.content .details a span{
+    transition: all linear 0.1s;
+    font-weight: 400;
+}
+.content .details a:hover span{
+    letter-spacing: 0.2em;
+}
+.single_card{
+    background-color: white;
+    box-shadow: 0.05em 0.05em 0.5em rgba(10, 10, 10, 0.39);
+    padding: 1em;
+    border-radius: 0.7em;
+    max-width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+}
+.single_card .card_icons{
+    margin: 0.6em auto;
+    height: 2.5em;
+    width: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    border-radius: 50%;
+    background-color: #d162fb;
+}
+.single_card h5{
+    color: #ff046f;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.single_card p{
+    font-size: 1em;
+    color: black;
+    font-weight: 300;
+}
+#cards_container{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.aboutus_section button{
+    background-color: #d162fb;
+    padding: 0.3em 1.6em;
+    border-radius: 2.2em;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    border: none;
+}
+.aboutus_section button span{
+    display: inline-block;
+    transition: all linear 0.1s;
+    font-weight: 400;
+}
+.aboutus_section button:hover span{
+    letter-spacing: 0.2em;
+}
+.teachers_section , .reviews_section{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: #f9f9f9;
+}
+.teachers_section img{
+    height: 16em;
+    margin: 0 auto;
+    max-width: 20em;
+    filter: grayscale();
+}
+.teachers_section img:hover{
+    filter: none;
+}
+.social_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_links div{
+    color: #ff046f;
+    font-size: 22px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.social_links div:hover{
+    color: #d162fb;
+}
+.courses .card{
+  margin-top:3.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem 0.1rem #d162fb,
+              .5rem .5rem .5rem rgba(0,0,0,.3);
+  padding: 20px 10px;
+}
+.courses .card .icon{
+    height: 6rem;
+    width: 6rem;
+    background-color: #ff046f;
+    align-items: center;
+    line-height: 5rem;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 .7rem #fff inset;
+    border: .7rem solid #fff;
+    border-left: .7rem solid #ff046f;
+    border-right: .7rem solid #ff046f;
+    margin: -4rem auto auto auto;
+}
+.courses{
+    max-width: 70%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.courses .card{
+    max-width: 13em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reviews_section .container{
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #d162fb;
+    margin-top: 10px;
+}
+.reviews_section .single_card .student{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    border-top: .4rem solid #d162fb;
+    border-bottom: .4rem solid #ff046f;
+    border-right: .4rem solid #d162fb;
+    border-left: .4rem solid #ff046f;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -3.3rem;
+}
+.reviews_section .single_card .student img{
+    height: 110%;
+    width: 110%;
+}
+.contactus_section form{
+    max-width: 24em;
+}
+.contactus_section{
+    background-color: #333333;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.contactus_form input{
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+.contactus_form textarea{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.contactus_form button{
+    background-color: #ff046f;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 20px;
+    border: 1px solid #ff046f;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all linear 0.2s;
+}
+.contactus_form button:hover{
+    background-color: transparent;
+    color: #ff046f;
+    border: 1px solid #ff046f;
+}
+.footer{
+    padding: 1.3em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer .icons div{
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #d162fb;
+    color: #d162fb;
+    transition: all linear 0.3s;
+}
+.footer .icons div:hover{
+    border: 2px solid #ff046f;
+    background-color: #ff046f;
+    color: white;
+}
+.footer .hr{
+    border: .1rem solid #999999;
+    margin: 20px 0;
+    width: 90%;
+}
+.footer h6{
+    font-weight: 300;
+    font-size: 25px;
+}
+.footer h6 span{
+    color: #ff046f;
+    font-weight: 500;
+}
+/*  media queries for website
+    and they should be written at the end of style.css otherwise error occur
+*/
+@media screen and (min-width : 1326px){
+    body{
+        font-size: 17px;
+    }
+}
+@media screen and (min-width : 1460px){
+    body{
+        font-size: 19px;
+    }
+}
+@media screen and (min-width : 1600px){
+    body{
+        font-size: 21px;
+    }
+}
+@media screen and (min-width : 1920px){
+    body{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width : 750px){
+    .content .details{
+        max-width: 90%;
+    }
+    .contactus_section form{
+        margin: 0 auto;
+    }
+    .toggle_menu{
+        display: block;
+        cursor: pointer;
+    }
+    .nav_bar .menu_bar{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: none;
+        animation: fadeInUp 0.2s linear;
+    }
+    .nav_bar .menu_bar ul li{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+    }
+    .nav_bar .menu_bar ul li a{
+        padding: 0 30px;
+    }
+    .hero_section .content{
+        max-width: 100%;
+    }
+    .hero_section .bottom_wave{
+        bottom: -30%;
+    }
+}
+@media screen and (max-width : 1100px){
+    .hero_section .bottom_wave{
+        bottom: -20% !important;
+    }
+}
