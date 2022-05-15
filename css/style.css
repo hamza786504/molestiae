@@ -361,6 +361,14 @@ p{
 /*  media queries for website
     and they should be written at the end of style.css otherwise error occur
 */
+@media screen and (max-width : 550px){
+    .hero_section .bottom_wave{
+        background-color: transparent;
+    }
+    .footer{
+        text-align: center;
+    }
+}
 @media screen and (min-width : 1326px){
     body{
         font-size: 17px;
